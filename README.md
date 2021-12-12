@@ -9,4 +9,6 @@ after cloning this project to your workspace:
 
 the app should open on browser as soon as server is ready (http://localhost:3000/)
 
+this web is also hosted on `https://admiring-newton-e8da2a.netlify.app/`
+
 
