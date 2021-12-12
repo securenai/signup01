@@ -20,19 +20,19 @@
 .button:hover .icon {
 	fill: #fff;
 }
-.button-stretch {
+.button--stretch {
 	width: 100%;
 }
-.button-default {
+.button--default {
 	font-size: 13px;
 	width: 190px;
 }
-.button-submit {
+.button--submit {
 	font-size: 14px;
 	background: #3c71ff;
 	color: #fff;
 }
-.button-content {
+.button--content {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;

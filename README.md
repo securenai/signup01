@@ -1,7 +1,9 @@
 # how to startup
 
-1. npm install
-2. npm start
+after cloning this project to your workspace:
+
+1. cd to the signup01 directory and execute `npm install`
+2. execute `npm start`
 
 the app should open on browser as soon as server is ready (http://localhost:3000/)
 

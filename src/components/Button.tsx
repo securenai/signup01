@@ -17,10 +17,10 @@ const Button: React.FC<ButtonProps> = ({ label, stretch, submit, icon }) => {
 
 	return (
 		<div
-			className={`button ${submit ? 'button-submit' : ''} ${
-				stretch ? 'button-stretch' : 'button-default'
+			className={`button ${submit ? 'button--submit' : ''} ${
+				stretch ? 'button--stretch' : 'button--default'
 			}`}>
-			<div className="button-content">
+			<div className="button--content">
 				{icon && <div>{renderIcon()}</div>}
 				{label}
 			</div>

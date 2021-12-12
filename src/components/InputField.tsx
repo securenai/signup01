@@ -22,20 +22,22 @@ const InputField: React.FC<InputFieldProps> = ({
 	const [inputValue, setInputValue] = useState(''); // controlled component
 
 	return (
-		<div className="input-container">
+		<div className="input__container">
 			<div
-				className={`input-field ${stretch ? 'input-stretch' : 'input-default'}`}
+				className={`input__field ${
+					stretch ? 'input__field--stretch' : 'input__field--default'
+				}`}
 				onClick={() => setIsActive(true)}
 				onBlur={() => {
 					setIsActive(inputValue.length > 0);
 				}}>
 				{isActive ? (
-					<div className="input-field-active">
-						<span className="label-active">{label}</span>
-						<div className="input-field-wrapper">
-							<div className="input-field-wrapper2">
+					<div className="input__field--active">
+						<span className="input__label--active">{label}</span>
+						<div className="input__field--active-wrapper">
+							<div className="input__field--active-width">
 								<input
-									className={`input input-${type}`}
+									className={`input__text input__text--${type}`}
 									autoFocus
 									type={type}
 									value={inputValue}
@@ -43,16 +45,18 @@ const InputField: React.FC<InputFieldProps> = ({
 									onChange={(e) => setInputValue(e.target.value)}
 								/>
 								{showPassword && (
-									<div className="show-password">{inputValue}</div>
+									<div className="input__field--active-password">
+										{inputValue}
+									</div>
 								)}
 							</div>
 						</div>
 					</div>
 				) : (
-					<span className="label">{label}</span>
+					<span className="input__label">{label}</span>
 				)}
 				{type === 'password' && (
-					<div className="aaa">
+					<div className="input__field--showpass">
 						{showPassword ? (
 							<ShowPwd onClick={() => setShowPassword(!showPassword)} />
 						) : (
@@ -62,7 +66,7 @@ const InputField: React.FC<InputFieldProps> = ({
 				)}
 			</div>
 			{validate && (
-				<div className="validate">
+				<div className="input__field--validate">
 					{type === 'password' && (
 						<>
 							<Validation
@@ -73,15 +77,6 @@ const InputField: React.FC<InputFieldProps> = ({
 							<Validation ruleDesc="One number" rule="p2" value={inputValue} />
 						</>
 					)}
-					{/* {type === 'email' && (
-						<>
-							<Validation
-								ruleDesc="valid email"
-								rule="e1"
-								value={inputValue}
-							/>
-						</>
-					)} */}
 				</div>
 			)}
 		</div>

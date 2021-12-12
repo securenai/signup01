@@ -10,29 +10,29 @@ export interface RegisterProps {}
 const Register: React.FC<RegisterProps> = () => {
 	return (
 		<div className="register">
-			<div className="register_form">
-				<div className="register_form_content">
+			<div className="register__container">
+				<div className="register__form">
 					<div className="return">
 						<Back />
-						<span className="Return-back">Back</span>
+						<span className="return__back">Back</span>
 					</div>
-					<div className="register_form_intro">Start from free</div>
-					<div className="register_form_title">Create an account</div>
-					<div className="signin_options">
+					<div className="register__intro">Start from free</div>
+					<div className="register__title">Create an account</div>
+					<div className="register__options">
 						<Button label="Sign up with Google" icon="google" />
 						<Button label="Sign up with Facebook" icon="facebook" />
 					</div>
-					<div className="register_alt">
+					<div className="register__email">
 						<span>Or use your email for registration</span>
-						<div className="line"></div>
+						<div className="register__email--line"></div>
 					</div>
-					<div className="name">
+					<div className="register__name">
 						<InputField label="First Name" />
 						<InputField label="Last Name" />
 					</div>
 					<InputField label="E-mail" stretch />
 					<InputField label="Password" stretch type="password" validate />
-					<div className="register_agreement">
+					<div className="register__agreement">
 						<CheckBox />
 						<div>
 							By creating account, you agree to accept our Privacy Policy, Terms
@@ -40,9 +40,9 @@ const Register: React.FC<RegisterProps> = () => {
 						</div>
 					</div>
 					<Button label="Create an Free Account!" stretch submit />
-					<div className="register_redirect">
+					<div className="register__isMember">
 						Already have an account?
-						<span className="log_in">Log in</span>
+						<span className="register__isMember--login">Log in</span>
 					</div>
 				</div>
 			</div>

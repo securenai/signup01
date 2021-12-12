@@ -20,9 +20,12 @@ const validate = (rule: string, value: string) => {
 const Validation: React.FC<ValidationProps> = ({ value, rule, ruleDesc }) => {
 	const isValid = validate(rule, value);
 	return (
-		<div className={`validation-item ${isValid ? 'valid' : ''}`}>
+		<div
+			className={`validation__item ${
+				isValid ? 'validation__item--valid' : ''
+			}`}>
 			{isValid ? <Verified /> : <NotVerified />}
-			<div className="desc">{ruleDesc}</div>
+			<div className="validation__item--desc">{ruleDesc}</div>
 		</div>
 	);
 };
