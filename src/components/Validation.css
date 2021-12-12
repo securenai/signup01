@@ -1,0 +1,12 @@
+.validation-item {
+	display: flex;
+	color: #ababab;
+}
+.desc {
+	font-size: 10px;
+	margin-left: 2px;
+	margin-right: 10px;
+}
+.valid {
+	color: #000;
+}

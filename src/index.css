@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+}
+@font-face {
+	font-family: 'Interstate-regular';
+	src: local('Interstate-regular'),
+		url(./assets/fonts/Interstate-regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Interstate-bold';
+	src: local('Interstate-bold'),
+		url(./assets/fonts/Interstate-bold.ttf) format('truetype');
+}

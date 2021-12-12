@@ -1,0 +1,121 @@
+.register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f1f5ff;
+	height: 100vh;
+	font-family: 'Interstate-regular';
+}
+.register_form_content {
+	width: 400px;
+	margin: 0 auto;
+}
+.register_form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	background-color: #ffffff;
+	height: 680px;
+	width: 610px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px 5px rgba(222, 231, 255, 0.25);
+}
+.register_form_intro {
+	margin: 15px 0px 6px 0px;
+	font-size: 1.125em;
+	line-height: 22px;
+}
+.register_form_title {
+	font-size: 1.875em;
+	font-weight: bold;
+	line-height: 36px;
+}
+.signin_options {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 16px;
+}
+.name {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.register_agreement {
+	color: #757575;
+	display: flex;
+	line-height: 16px;
+	font-size: 13px;
+	margin: 20px 0px;
+}
+.register_redirect {
+	color: #757575;
+	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	margin-top: 12px;
+}
+.register_check {
+	width: 18px;
+	height: 18px;
+	background: #ababab;
+	border-radius: 5px;
+}
+.return {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	align-self: flex-start;
+	position: absolute;
+	top: 32px;
+	left: 45px;
+}
+.return:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+.register_alt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	margin-top: 30px;
+	margin-bottom: 22px;
+}
+.line {
+	font-size: 13px;
+	width: 175px;
+	margin-left: 9px;
+	border-bottom: 1px solid #000000;
+}
+.log_in {
+	color: #3c71ff;
+	text-decoration: none;
+	padding-left: 3px;
+}
+.log_in:hover {
+	cursor: pointer;
+	/* border-bottom: 2px solid #3c71ff; */
+}
+.validate {
+	display: flex;
+	line-height: 12px;
+	font-weight: bold;
+}
+.Return-back {
+	padding-left: 3px;
+}
+
+/* MEDIA QUERIES ---------------------------------- */
+@media (max-width: 490px) {
+	.return {
+		justify-content: flex-start;
+		position: static;
+	}
+	.register_form_content {
+		width: 390px;
+	}
+}
