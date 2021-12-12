@@ -2,6 +2,8 @@
 
 after cloning this project to your workspace:
 
+`git clone https://github.com/securenai/signup01.git`
+
 1. cd to the signup01 directory and execute `npm install`
 2. execute `npm start`
 
